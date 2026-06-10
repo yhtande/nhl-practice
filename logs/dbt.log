@@ -77,3 +77,35 @@ Runtime Error
 [0m11:24:22.313323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2599959390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2599a07f90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7a2599a070d0>]}
 [0m11:24:22.313829 [debug] [MainThread]: Flushing usage events
 [0m11:24:23.374148 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:35:30.494243 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7493f8ba1250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7493f8460350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7493f84f6410>]}
+
+
+============================== 14:35:30.509069 | 295adfdd-0484-47f4-94e1-3f55b9fb5cb5 ==============================
+[0m14:35:30.509069 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:35:30.511477 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'log_path': 'logs', 'log_format': 'default', 'quiet': 'False', 'printer_width': '80', 'debug': 'False', 'write_json': 'True', 'indirect_selection': 'eager', 'warn_error': 'None', 'target_path': 'None', 'use_experimental_parser': 'False', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'fail_fast': 'False', 'profiles_dir': '/home/yanhan/.dbt', 'invocation_command': 'dbt run --select stg_game', 'version_check': 'True', 'empty': 'False', 'log_cache_events': 'False', 'use_colors': 'True', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'cache_selected_only': 'False'}
+[0m14:35:30.514482 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/yanhan/projects/nhl-practice/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:35:30.526940 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.234807, "process_in_blocks": "39864", "process_kernel_time": 0.92393, "process_mem_max_rss": "124648", "process_out_blocks": "16", "process_user_time": 6.961615}
+[0m14:35:30.530348 [debug] [MainThread]: Command `dbt run` failed at 14:35:30.529761 after 0.24 seconds
+[0m14:35:30.533540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7493f845ae10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7493f845ba90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7493f8462410>]}
+[0m14:35:30.535737 [debug] [MainThread]: Flushing usage events
+[0m14:35:31.803801 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:09:49.867836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737a6fdd6350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737a6ff6fd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737a6fdcf590>]}
+
+
+============================== 20:09:49.873011 | 7e92acea-77c0-400e-a109-d64aa0e7fa02 ==============================
+[0m20:09:49.873011 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:09:49.873760 [debug] [MainThread]: running dbt with arguments {'debug': 'False', 'printer_width': '80', 'empty': 'False', 'no_print': 'None', 'write_json': 'True', 'invocation_command': 'dbt run --select stg_game_skater_stats mart_player_season', 'quiet': 'False', 'partial_parse': 'True', 'version_check': 'True', 'profiles_dir': '/home/yanhan/.dbt', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'log_path': 'logs', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error': 'None', 'introspect': 'True', 'indirect_selection': 'eager', 'fail_fast': 'False', 'log_format': 'default', 'use_colors': 'True', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None'}
+[0m20:09:49.874122 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/yanhan/projects/nhl-practice/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m20:09:49.875272 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.053145822, "process_in_blocks": "68160", "process_kernel_time": 0.256973, "process_mem_max_rss": "124588", "process_out_blocks": "8", "process_user_time": 1.952995}
+[0m20:09:49.875575 [debug] [MainThread]: Command `dbt run` failed at 20:09:49.875514 after 0.05 seconds
+[0m20:09:49.875823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737a6fdd7890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737a6ff1d490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x737a6fdcf350>]}
+[0m20:09:49.876068 [debug] [MainThread]: Flushing usage events
+[0m20:09:51.032152 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -15,3 +15,4 @@ SELECT
     CAST(goals_home AS integer)                             AS goals_home
 FROM {{ source('raw', 'game_plays') }}
 WHERE event IN ('Shot', 'Goal', 'Missed Shot', 'Blocked Shot', 'Penalty', 'Takeaway')
+QUALIFY ROW_NUMBER() OVER (PARTITION BY play_id ORDER BY period_time) = 1

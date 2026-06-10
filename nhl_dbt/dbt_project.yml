@@ -19,9 +19,6 @@ models:
     staging:
       +materialized: view
       +schema: staging
-    silver:
+    gold:
       +materialized: table
-      +schema: silver
-    marts:
-      +materialized: table
-      +schema: marts
+      +schema: gold

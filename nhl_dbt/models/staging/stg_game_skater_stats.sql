@@ -22,3 +22,4 @@ SELECT
     CAST(evenTimeOnIce AS integer)                      AS even_time_on_ice,
     CAST(powerPlayTimeOnIce AS integer)                 AS pp_time_on_ice
 FROM {{ source('raw', 'game_skater_stats') }}
+QUALIFY ROW_NUMBER() OVER (PARTITION BY game_id, player_id ORDER BY timeOnIce DESC) = 1

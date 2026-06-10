@@ -5,6 +5,7 @@ select
     cast(cast(season as integer) / 10000 as integer)           as season_year,
     cast(type as varchar)                                      as game_type,
     cast(date_time_gmt as timestamp)                           as game_timestamp,
+    cast(venue as varchar)                                     as venue,
     cast(away_team_id as integer)                              as away_team_id,
     cast(home_team_id as integer)                              as home_team_id,
     cast(away_goals as integer)                                as away_goals,
