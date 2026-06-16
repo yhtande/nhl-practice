@@ -27,7 +27,7 @@ SELECT
 FROM {{ ref('fct_play') }} fp
 LEFT JOIN {{ ref('stg_game') }} g
     ON fp.game_id = g.game_id
-LEFT JOIN {{ ref('stg_game_teams_stats') }} ts
+LEFT JOIN {{ ref('fct_game_teams_stats') }} ts
     ON fp.game_id = ts.game_id
     AND fp.team_id_for = ts.team_id
 WHERE ts.team_id IS NOT NULL
