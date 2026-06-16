@@ -2,3 +2,4 @@ data/*.csv
 .venv/
 *.duckdb
 logs/
+NHL_Pipeline/
