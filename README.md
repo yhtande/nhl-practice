@@ -59,7 +59,7 @@ Gold Tables
 - `raw.game_plays`, `raw.game_penalties`, `raw.game_skater_stats` all contain duplicate rows in 2018–2019 seasons — fixed with `QUALIFY ROW_NUMBER()` deduplication in staging
 - Pre-2010 seasons have **100% missing shot coordinates** (0 of 58,949 goal records located) — `mart_shot_zones` scoped to 2010+ for reliable analysis
 - 633 games have `tbc` outcomes (winner unrecorded) — filtered at staging level
-- **46.3% of goal events (61,737 of 133,345) are missing x/y coordinates** — corrected from an initial 41.4% (61,740 of 148,928) after fixing a duplicate-row bug in `raw.game`
+- **46.3% of goal events (61,737 of 133,345) are missing x/y coordinates** — corrected from an initial 41.4% (61,740 of 148,992) after fixing a duplicate-row bug in `raw.game`
 - `mart_shot_zones` zone definition refined: `slot` split into `low_slot` (x ≥ 69, |y| ≤ 22) and `high_slot` (54 ≤ x ≤ 68, |y| ≤ 22) per NHL convention — surfaces a clean conversion gradient (low_slot 19.45% → high_slot 12.04% → wings ~3%)
 
 ---
