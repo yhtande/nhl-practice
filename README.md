@@ -124,4 +124,4 @@ nhl-practice/
 - Debugging fan-out joins and tracing duplicates from raw → staging → gold
 - Designing mart grain for business questions vs technical convenience
 - dbt schema tests, model descriptions, and documentation generation
-- Caught and fixed a duplicate-row bug in `raw.game` that inflated post-2010 goal counts by ~11% — surfaced only by hand-validating absolute counts against raw source data, not by structural dbt tests. Rate-based metrics survive uniform multiplication; absolute counts don't.
+- Caught and fixed a duplicate-row bug in `raw.game`: 2,570 duplicate game records in the 2018-19 seasons were inflating downstream goal counts via LEFT JOIN multiplication — surfaced only by hand-validating absolute counts against raw source data, not by structural dbt tests. Rate-based metrics survive uniform multiplication; absolute counts don't.
